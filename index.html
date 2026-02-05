@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA Central | Главная - Новости, результаты, статистика</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-basketball-ball logo-icon"></i>
+                <span class="logo-text">NBA<span>Central</span></span>
+            </a>
+            
+            <nav class="nav" id="mainNav">
+                <ul>
+                    <li><a href="index.html" class="active"><i class="fas fa-home"></i> Главная</a></li>
+                    <li><a href="news.html"><i class="far fa-newspaper"></i> Новости</a></li>
+                    <li><a href="teams.html"><i class="fas fa-users"></i> Команды</a></li>
+                    <li><a href="#standings"><i class="fas fa-chart-line"></i> Турнир</a></li>
+                    <li><a href="#players"><i class="fas fa-user"></i> Игроки</a></li>
+                    <li><a href="#stats"><i class="fas fa-chart-bar"></i> Статистика</a></li>
+                </ul>
+            </nav>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+   
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Мир НБА в деталях</h1>
+                <p>Актуальные новости, статистика игроков, результаты матчей и анализ всех событий Национальной Баскетбольной Ассоциации</p>
+                <div class="hero-buttons">
+                    <a href="news.html" class="btn">Последние новости</a>
+                    <a href="#standings" class="btn btn-outline">Турнирная таблица</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <main class="main">
+       
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title"><i class="far fa-newspaper"></i> Последние новости</h2>
+                <div class="news-grid">
+                    
+                    <article class="news-card">
+                        <div class="news-image">
+                            <img src="https://images.unsplash.com/photo-1519861531473-920034658307?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Новичок года">
+                        </div>
+                        <div class="news-content">
+                            <span class="news-category">Награды</span>
+                            <h3 class="news-title">Витсман назван Новичком Года</h3>
+                            <p class="news-date"><i class="far fa-clock"></i> 18 мая 2024</p>
+                            <p class="news-excerpt">Центровой Оклахома-Сити одержал уверенную победу в голосовании за звание лучшего новичка сезона.</p>
+                            <a href="news.html#news1" class="read-more">Читать полностью <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    
+                    
+                    <article class="news-card">
+                        <div class="news-image">
+                            <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Финал НБА">
+                        </div>
+                        <div class="news-content">
+                            <span class="news-category
+                            >Плей-офф</span>
+                            <h3 class="news-title">Стартовал финал НБА</h3>
+                            <p class="news-date"><i class="far fa-clock"></i> 20 мая 2024</p>
+                            <p class="news-excerpt">Бостон и Даллас начали борьбу за чемпионский титул. Обзор первого матча финальной серии.</p>
+                            <a href="news.html#news2" class="read-more">Читать полностью <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    
+                
+                    <article class="news-card">
+                        <div class="news-image">
+                            <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Легенда">
+                        </div>
+                        <div class="news-content">
+                            <span class="news-category">История</span>
+                            <h3 class="news-title">Документальный фильм о Джордане</h3>
+                            <p class="news-date"><i class="far fa-clock"></i> 15 мая 2024</p>
+                            <p class="news-excerpt">На экраны выходит новая лента, раскрывающая неизвестные факты о карьере Майкла Джордана.</p>
+                            <a href="news.html#news3" class="read-more">Читать полностью <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+                
+                <div style="text-align: center; margin-top: 40px;">
+                    <a href="news.html" class="btn">Все новости</a>
+                </div>
+            </div>
+        </section>
+
+       
+        <section class="section" id="standings">
+            <div class="container">
+                <h2 class="section-title"><i class="fas fa-trophy"></i> Турнирная таблица НБА</h2>
+                
+                <div class="table-container">
+                    <table class="stats-table">
+                        <thead>
+                            <tr>
+                                <th>Позиция</th>
+                                <th>Команда</th>
+                                <th>Победы</th>
+                                <th>Поражения</th>
+                                <th>Процент побед</th>
+                            </tr>
+                        </thead>
+                        <tbody id="standingsBody">
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+       
+        <section class="section" id="players">
+            <div class="container">
+                <h2 class="section-title"><i class="fas fa-star"></i> Лучшие игроки сезона</h2>
+                
+                <div class="news-grid">
+                    <div class="news-card">
+                        <div class="news-image">
+                            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Никола Йокич">
+                        </div>
+                        <div class="news-content">
+                            <h3 class="news-title">Никола Йокич</h3>
+                            <p class="news-excerpt">Центровой Денвера лидирует в гонке за MVP. В среднем: 26.4 очка, 12.4 подбора, 9.0 передачи.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="news-card">
+                        <div class="news-image">
+                            <img src="https://images.unsplash.com/photo-1598880940080-ff9a29891b85?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Лука Дончич">
+                        </div>
+                        <div class="news-content">
+                            <h3 class="news-title">Лука Дончич</h3>
+                            <p class="news-excerpt">Лучший бомбардир лиги. среднем: 33.9 очка, 9.2 подбора, 9.8 передачи за игру.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="news-card">
+                        <div class="news-image">
+                            <img src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Шай Гилджес-Александер">
+                        </div>
+                        <div class="news-content">
+                            <h3 class="news-title">Шай Гилджес-Александер</h3>
+                            <p class="news-excerpt">Лидер Оклахома-Сити. В среднем: 30.8 очка, 5.6 подбора, 6.3 передачи.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>NBA Central</h3>
+                    <p>Самый полный источник информации о Национальной Баскетбольной Ассоциации. Новости, статистика, результаты.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section footer-links">
+                    <h4>Разделы</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                        <li><a href="teams.html">Команды</a></li>
+                        <li><a href="#standings">Турнир</a></li>
+                        <li><a href="#players">Игроки</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section footer-links">
+                    <h4>Контакты</h4>
+                    <ul>
+                        <li><a href="mailto:info@nbacentral.com">info@nbacentral.com</a></li>
+                        <li><a href="tel:+79991234567">+7 (999) 123-45-67</a></li>
+                        <li>Москва, ул. Спортивная, 15</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 NBA Central. Все права защищены. Данный сайт является фанатским проектом.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>"

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA Central | Новости баскетбола</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-basketball-ball logo-icon"></i>
+                <span class="logo-text">NBA<span>Central</span></span>
+            </a>
+            
+            <nav class="nav" id="mainNav">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                    <li><a href="news.html" class="active"><i class="far fa-newspaper"></i> Новости</a></li>
+                    <li><a href="teams.html"><i class="fas fa-users"></i> Команды</a></li>
+                    <li><a href="#standings"><i class="fas fa-chart-line"></i> Турнир</a></li>
+                    <li><a href="#players"><i class="fas fa-user"></i> Игроки</a></li>
+                    <li><a href="#stats"><i class="fas fa-chart-bar"></i> Статистика</a></li>
+                </ul>
+            </nav>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero" style="padding: 100px 0; background-image: linear-gradient(rgba(4, 30, 66, 0.9), rgba(4, 30, 66, 0.9)), url('https://images.unsplash.com/photo-1519861531473-920034658307?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');">
+            <div class="container">
+                <h1 style="color: white; text-align: center; font-size: 3rem;">Новости НБА</h1>
+                <p style="color: white; text-align: center; font-size: 1.2rem; max-width: 700px; margin: 20px auto;">Все самые свежие новости из мира баскетбола</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                
+                <article class="news-card" id="news1" style="margin-bottom: 50px;">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1519861531473-920034658307?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Новичок года">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-category">Награды</span>
+                        <h2 class="news-title" style="font-size: 2rem;">Витсман назван Новичком Года сезона 2023-24</h2>
+                        <p class="news-date"><i class="far fa-clock"></i> 18 мая 2024 | <i class="far fa-user"></i> Алексей Иванов</p>
+                        
+                        <div class="news-full">
+                            <p>Центровой «Оклахома-Сити Тандер» Чет Витсман был признан Новичком года НБА сезона 2023-24, одержав уверенную победу в голосовании, результаты которого были объявлены сегодня.</p>
+                            
+                            <p>Витсман получил 75 из 100 возможных голосов первых мест от панели голосования, состоящей из спортивных журналистов и телеведущих. Он стал первым игроком «Тандер», получившим эту награду.</p>
+                            
+                            <h3 style="margin: 20px 0 10px; color: var(--nba-dark);">Статистика сезона</h3>
+                            <ul style="margin-left: 20px; margin-bottom: 20px;">
+                                <li>Очки за игру: 16.5</li>
+                                <li>Подборы: 7.8</li>
+                                <li>Передачи: 2.4</li>
+                                <li>Блок-шоты: 1.5</li>
+                                <li>Процент попаданий: 52.3%</li>
+                            </ul><p>«Это огромная честь для меня, — сказал Витсман. — Хочу поблагодарить моих товарищей по команде, тренеров и всю организацию «Оклахома-Сити» за поддержку в течение всего сезона».</p>
+                            
+                            <p>Витсман был выбран под общим 2-м номером на драфте 2023 года после одного сезона в Гонзаге. Его немедленное влияние помогло «Тандер» войти в плей-офф впервые за последние три сезона.</p>
+                        </div>
+                    </div>
+                </article>
+
+                
+                <article class="news-card" id="news2" style="margin-bottom: 50px;">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Финал НБА">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-category">Плей-офф</span>
+                        <h2 class="news-title" style="font-size: 2rem;">Стартовал финал НБА: Бостон vs Даллас</h2>
+                        <p class="news-date"><i class="far fa-clock"></i> 20 мая 2024 | <i class="far fa-user"></i> Мария Петрова</p>
+                        
+                        <div class="news-full">
+                            <p>Финальная серия НБА 2024 года началась с захватывающей победы «Бостон Селтикс» над «Даллас Маверикс» со счетом 107-89 на домашней площадке TD Garden.</p>
+                            
+                            <p>Джейсон Тейтум набрал 28 очков и сделал 8 подборов, а Джейлен Браун добавил 22 очка, возглавив атаку «Селтикс». Со стороны «Маверикс» Лука Дончич показал трипл-дабл (32 очка, 11 подборов, 10 передач), но этого оказалось недостаточно.</p>
+                            
+                            <h3 style="margin: 20px 0 10px; color: var(--nba-dark);">Ключевые моменты матча</h3>
+                            <ul style="margin-left: 20px; margin-bottom: 20px;">
+                                <li>«Селтикс» начали матч с отрезка 12-0</li>
+                                <li>Дончич получил 4-й фол в конце 3-й четверти</li>
+                                <li>Точность трехочковых у «Бостона»: 45% против 28% у «Далласа»</li>
+                                <li>Подборы: 52 у «Селтикс» против 41 у «Маверикс»</li>
+                            </ul>
+                            
+                            <p>Тренер «Бостона» Джо Маззулла прокомментировал: «Мы знали, что нужно установить наш темп с самого начала. Ребята выполнили план игры на отлично».</p>
+                            
+                            <p>Второй матч финальной серии состоится в воскресенье в Бостоне. «Маверикс» должны будут найти ответ на агрессивную защиту «Селтикс», чтобы сравнять счет в серии.</p>
+                        </div>
+                    </div>
+                </article>
+
+                
+                <div class="news-grid">
+                    <article class="news-card">
+                        <div class="news-image">
+                            <img src="https://images.unsplash.com/photo-1598880940080-ff9a29891b85?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Драфт НБА">
+                        </div>
+                        <div class="news-content">
+                            <span class="news-category">Драфт</span>
+                            <h3 class="news-title">Определился порядок выбора на драфте 2024</h3>
+                            <p class="news-date"><i class="far fa-clock"></i> 12 мая 2024</p>
+                            <p class="news-excerpt">Детройт Пистонс выиграли лотерею и получат первый пик на предстоящем драфте НБА.</p>
+                            <a href="#" class="read-more">Читать <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    
+                    <article class="news-card">
+                        <div class="news-image"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Йокич MVP">
+                        </div>
+                        <div class="news-content">
+                            <span class="news-category">Награды</span>
+                            <h3 class="news-title">Йокич лидирует в гонке за MVP</h3>
+                            <p class="news-date"><i class="far fa-clock"></i> 10 мая 2024</p>
+                            <p class="news-excerpt">Сербский центровой уверенно лидирует в опросе за звание Самого ценного игрока сезона.</p>
+                            <a href="#" class="read-more">Читать <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    
+                    <article class="news-card">
+                        <div class="news-image">
+                            <img src="https://images.unsplash.com/photo-1599058917765-a780eda07a3d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Травма">
+                        </div>
+                        <div class="news-content">
+                            <span class="news-category">Травмы</span>
+                            <h3 class="news-title">Эмбиид вернулся к тренировкам</h3>
+                            <p class="news-date"><i class="far fa-clock"></i> 8 мая 2024</p>
+                            <p class="news-excerpt">Звездный центровой Филадельфии восстановился после травмы колена и готовится к следующему сезону.</p>
+                            <a href="#" class="read-more">Читать <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                
+                <div class="pagination">
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>NBA Central</h3>
+                    <p>Все новости из мира НБА в одном месте. Самые свежие результаты, трансферы и аналитика.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section footer-links">
+                    <h4>Категории новостей</h4>
+                    <ul>
+                        <li><a href="#">Плей-офф</a></li>
+                        <li><a href="#">Трансферы</a></li>
+                        <li><a href="#">Травмы</a></li>
+                        <li><a href="#">Награды</a></li>
+                        <li><a href="#">Драфт</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section footer-links">
+                    <h4>Подписка</h4>
+                    <p>Подпишитесь на рассылку, чтобы получать самые важные новости первыми.</p>
+                    <form style="margin-top: 15px;">
+                        <input type="email" placeholder="Ваш email" style="padding: 10px; width: 100%; margin-bottom: 10px; border-radius: 4px; border: 1px solid #ccc;">
+                        <button type="submit" class="btn" style="width: 100%;">Подписаться</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 NBA Central. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

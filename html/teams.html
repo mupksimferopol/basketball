@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA Central | Все команды НБА</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-basketball-ball logo-icon"></i>
+                <span class="logo-text">NBA<span>Central</span></span>
+            </a>
+            
+            <nav class="nav" id="mainNav">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                    <li><a href="news.html"><i class="far fa-newspaper"></i> Новости</a></li>
+                    <li><a href="teams.html" class="active"><i class="fas fa-users"></i> Команды</a></li>
+                    <li><a href="#standings"><i class="fas fa-chart-line"></i> Турнир</a></li>
+                    <li><a href="#players"><i class="fas fa-user"></i> Игроки</a></li>
+                    <li><a href="#stats"><i class="fas fa-chart-bar"></i> Статистика</a></li>
+                </ul>
+            </nav>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero" style="padding: 100px 0; background-image: linear-gradient(rgba(4, 30, 66, 0.9), rgba(4, 30, 66, 0.9)), url('https://images.unsplash.com/photo-1546519638-68e109498ffc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');">
+            <div class="container">
+                <h1 style="color: white; text-align: center; font-size: 3rem;">Команды НБА</h1>
+                <p style="color: white; text-align: center; font-size: 1.2rem; max-width: 700px; margin: 20px auto;">Все 30 команд Национальной Баскетбольной Ассоциации</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                
+                <div style="margin-bottom: 40px; text-align: center;">
+                    <div style="display: inline-flex; gap: 10px; flex-wrap: wrap; justify-content: center;">
+                        <button class="btn btn-outline active" data-conference="all">Все команды</button>
+                        <button class="btn btn-outline" data-conference="east">Восточная конференция</button>
+                        <button class="btn btn-outline" data-conference="west">Западная конференция</button>
+                    </div>
+                </div>
+
+                
+                <h2 style="color: var(--nba-dark); margin: 50px 0 30px; font-size: 2rem; border-bottom: 3px solid var(--nba-red); padding-bottom: 10px;">
+                    <i class="fas fa-basketball-ball" style="color: var(--nba-red);"></i> Восточная конференция
+                </h2>
+                
+                <div class="teams-grid" id="eastTeams">
+                   
+                    <div class="team-card">
+                        <div class="team-logo">
+                            <img src="https://cdn.nba.com/logos/nba/1610612738/primary/L/logo.svg" alt="Бостон Селтикс">
+                        </div>
+                        <h3 class="team-name">Бостон Селтикс</h3>
+                        <p class="team-conference">Атлантический дивизион</p>
+                        <div class="team-record">52-14</div>
+                        <p style="margin-top: 10px; font-size: 0.9rem; color: var(--nba-gray);">Домашняя арена: TD Garden</p>
+                    </div>
+                    
+                    <div class="team-card">
+                        <div class="team-logo">
+                            <img src="https:
+                            /cdn.nba.com/logos/nba/1610612755/primary/L/logo.svg" alt="Филадельфия 76ерс">
+                        </div>
+                        <h3 class="team-name">Филадельфия 76ерс</h3>
+                        <p class="team-conference">Атлантический дивизион</p>
+                        <div class="team-record">36-30</div>
+                        <p style="margin-top: 10px; font-size: 0.9rem; color: var(--nba-gray);">Домашняя арена: Wells Fargo Center</p>
+                    </div>
+                    
+                    <div class="team-card">
+                        <div class="team-logo">
+                            <img src="https://cdn.nba.com/logos/nba/1610612752/primary/L/logo.svg" alt="Нью-Йорк Никс">
+                        </div>
+                        <h3 class="team-name">Нью-Йорк Никс</h3>
+                        <p class="team-conference">Атлантический дивизион</p>
+                        <div class="team-record">39-27</div>
+                        <p style="margin-top: 10px; font-size: 0.9rem; color: var(--nba-gray);">Домашняя арена: Madison Square Garden</p>
+                    </div>
+                    
+                    
+                    <div class="team-card">
+                        <div class="team-logo">
+                            <img src="https://cdn.nba.com/logos/nba/1610612739/primary/L/logo.svg" alt="Кливленд Кавальерс">
+                        </div>
+                        <h3 class="team-name">Кливленд Кавальерс</h3>
+                        <p class="team-conference">Центральный дивизион</p>
+                        <div class="team-record">40-22</div>
+                        <p style="margin-top: 10px; font-size: 0.9rem; color: var(--nba-gray);">Домашняя арена: Rocket Mortgage FieldHouse</p>
+                    </div>
+                    
+                    <div class="team-card">
+                        <div class="team-logo">
+                            <img src="https://cdn.nba.com/logos/nba/1610612749/primary/L/logo.svg" alt="Милуоки Бакс">
+                        </div>
+                        <h3 class="team-name">Милуоки Бакс</h3>
+                        <p class="team-conference">Центральный дивизион</p>
+                        <div class="team-record">41-22</div>
+                        <p style="margin-top: 10px; font-size: 0.9rem; color: var(--nba-gray);">Домашняя арена: Fiserv Forum</p>
+                    </div>
+                    
+                    
+                    <div class="team-card">
+                        <div class="team-logo">
+                            <img src="https://cdn.nba.com/logos/nba/1610612737/primary/L/logo.svg" alt="Атланта Хокс">
+                        </div>
+                        <h3 class="team-name">Атланта Хокс</h3>
+                        <p class="team-conference">Юго-Восточный дивизион</p>
+                        <div class="team-record">29-35</div>
+                        <p style="margin-top: 10px; font-size: 0.9rem; color: var(--nba-gray);">Домашняя арена: State Farm Arena</p>
+                    </div>
+                    
+                    <div class="team-card">
+                        <div class="team-logo">
+                            <img src="https://cdn.nba.com/logos/nba/1610612748/primary/L/logo.svg" alt="Майами Хит">
+                        </div>
+                        <h3 class="team-name">Майами Хит</h3>
+                        <p class="team-conference">Юго-Восточный дивизион</p>
+                        <div class="team-record">35-30</div>
+                        <p style="margin-top: 10px; font-size: 0.9rem; color: var(--nba-gray);">Домашняя арена: FTX Arena</p>
+                    </div>
+                </div>
+
+                
+                <h2 style="color: var(--nba-dark); margin: 50px 0 30px; font-size: 2rem; border-bottom: 3px solid var(--nba-blue); padding-bottom: 10px;">
+                    <i class="fas fa-basketball-ball" style="color: var(--nba-blue);"></i> Западная конференция
+                </h2>
+                <div class="teams-grid" id="westTeams">
+                    
+                    <div class="team-card">
+                        <div class="team-logo">
+                            <img src="https://cdn.nba.com/logos/nba/1610612750/primary/L/logo.svg" alt="Миннесота Тимбервулвз">
+                        </div>
+                        <h3 class="team-name">Миннесота Тимбервулвз</h3>
+                        <p class="team-conference">Северо-Западный дивизион</p>
+                        <div class="team-record">44-19</div>
+                        <p style="margin-top: 10px; font-size: 0.9rem; color: var(--nba-gray);">Домашняя арена: Target Center</p>
+                    </div>
+                    
+                    <div class="team-card">
+                        <div class="team-logo">
+                            <img src="https://cdn.nba.com/logos/nba/1610612743/primary/L/logo.svg" alt="Денвер Наггетс">
+                        </div>
+                        <h3 class="team-name">Денвер Наггетс</h3>
+                        <p class="team-conference">Северо-Западный дивизион</p>
+                        <div class="team-record">43-20</div>
+                        <p style="margin-top: 10px; font-size: 0.9rem; color: var(--nba-gray);">Домашняя арена: Ball Arena</p>
+                    </div>
+                    
+                    <div class="team-card">
+                        <div class="team-logo">
+                            <img src="https://cdn.nba.com/logos/nba/1610612760/primary/L/logo.svg" alt="Оклахома-Сити Тандер">
+                        </div>
+                        <h3 class="team-name">Оклахома-Сити Тандер</h3>
+                        <p class="team-conference">Северо-Западный дивизион</p>
+                        <div class="team-record">43-19</div>
+                        <p style="margin-top: 10px; font-size: 0.9rem; color: var(--nba-gray);">Домашняя арена: Paycom Center</p>
+                    </div>
+                    
+                    
+                    <div class="team-card">
+                        <div class="team-logo">
+                            <img src="https://cdn.nba.com/logos/nba/1610612746/primary/L/logo.svg" alt="Лос-Анджелес Клипперс">
+                        </div>
+                        <h3 class="team-name">Лос-Анджелес Клипперс</h3>
+                        <p class="team-conference">Тихоокеанский дивизион</p>
+                        <div class="team-record">40-21</div>
+                        <p style="margin-top: 10px; font-size: 0.9rem; color: var(--nba-gray);">Домашняя арена: Crypto.com Arena</p>
+                    </div>
+                    
+                    <div class="team-card">
+                        <div class="team-logo">
+                            <img src="https://cdn.nba.com/logos/nba/1610612744/primary/L/logo.svg" alt="Голден Стэйт Уорриорз">
+                        </div>
+                        <h3 class="team-name">Голден Стэйт Уорриорз</h3>
+                        <p class="team-conference">Тихоокеанский дивизион</p>
+                        <div class="team-record">33-28</div>
+                        <p style="margin-top: 10px; font-size: 0.9rem; color: var(--nba-gray);">Домашняя арена: Chase Center</p>
+                    </div>
+                    
+                    
+                    <div class="team-card">
+                        <div class="team-logo">
+                            <img src="https://cdn.nba.com/logos/nba/1610612742/primary/L/logo.svg" alt="Даллас Маверикс">
+                        </div>
+                        <h3 class="team-name">Даллас Маверикс</h3>
+                        <p class="team-conference">Юго-Западный дивизион</p>
+                        <div class="team-record">35-28</div>
+                        <p style="margin-top: 10px; font-size: 0.9rem; color: var(--nba-gray);">Домашняя арена: American Airlines Center</p>
+                    </div>
+                    
+                    <div class="team-card">
+                        <div class="team-logo">
+                            <img src="https://cdn.nba.com/logos/nba/1610612740/primary/L/logo.svg" alt="Нью-Орлеан Пеликанс">
+                        </div>
+                        <h3 class="team-name">Нью-Орлеан Пеликанс</h3>
+                        <p class="team-conference">Юго-Западный дивизион</p>
+                        <div class="team-record">38-25</div>
+                        <p style="margin-top: 10px; font-size: 0.9rem; color: var(--nba-gray);">Домашняя арена: Smoothie King Center</p>
+                    </div>
+                </div>
+
+                
+                <div style="margin-top: 60px;">
+                    <h3 class="section-title">Дивизионы НБА</h3>
+                    
+                    <div class="table-container">
+                        <table class="stats-table">
+                            <thead>
+                                <tr>
+                                    <th>Конференция</th>
+                                    <th>Дивизион</th>
+                                    <th>Команды</th>
+                                    <th>Лидер</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="3">Восточная</td>
+                                    <td>Атлантический</td>
+                                    <td>Бостон, Филадельфия, Нью-Йорк, Бруклин, Торонто</td>
+                                    <td>Бостон Селтикс</td>
+                                </tr>
+                                <tr>
+                                    <td>Центральный</td>
+                                    <td>Кливленд, Милуоки, Чикаго, Индиана, Детройт</td>
+                                    <td>Милуоки Бакс</td>
+                                </tr>
+                                <tr>
+                                    <td>Юго-Восточный</td>
+                                    <td>Атланта, Майами, Шарлотт, Орландо, Вашингтон</td>
+                                    <td>Майами Хит</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="3">Западная</td>
+                                    <td>Северо-Западный</td>
+                                    <td>Миннесота, Денвер, Оклахома-Сити, Юта, Портленд</td>
+                                    <td>Миннесота Тимбервулвз</td>
+                                </tr>
+                                <tr>
+                                    <td>Тихоокеанский</td>
+                                    <td>ЛА Клипперс, Голден Стэйт, ЛА Лейкерс, Финикс, Сакраменто</td>
+                                    <td>ЛА Клипперс</td>
+                                </tr>
+                                <tr>
+                                    <td>Юго-Западный</td>
+                                    <td>Даллас, Нью-Орлеан, Хьюстон, Мемфис, Сан-Антонио</td>
+                                    <td>Нью-Орлеан Пеликанс</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>NBA Central</h3>
+                    <p>Полная информация о всех командах НБА, их истории, составе и достижениях.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section footer-links">
+                    <h4>Конференции</h4>
